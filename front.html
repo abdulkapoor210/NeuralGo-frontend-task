@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK Online Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for the image */
+        #login-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            
+            /* Adjust the max-width and margin as needed */
+        }
+        body {
+            background-image: url('C:/Users/HP/.vscode/sample/front image.jpg');
+            margin-top: 5%;
+            margin-bottom:5%;
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size:cover;
+            
+
+
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="login-container" >
+            <h1 style="color: #ff0000" >Welcome to the GK Online Quiz </h1><br>
+            <h1>Login or Sign Up</h1>
+            
+            <style> 
+            
+                
+            </style>
+           
+            <input type="text" id="username" placeholder="Username"><br><br>
+            <input type="password" id="password" placeholder="Password"><br><br>
+            <button id="login-btn">Login</button>
+            <button id="signup-btn">Sign Up</button>
+            <p id="auth-error" class="error"></p>
+        </div>
+        <div id="quiz-container" style="display: none;">
+            <h1>Here you go!!!!</h1>
+            <div id="question"></div>
+            <ul id="options"></ul>
+            <button id="submit-btn">Submit Answer</button>
+            <div id="feedback"></div>
+            <div id="timer">Time Remaining: <span id="time-left"></span></div>
+        </div>
+        <div id="result-container" style="display: none;">
+            <h1>Quiz Results</h1><br>
+            <div id="score"></div><br><br>
+            <h1>Thankyou visit again!!!!...</h1>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
